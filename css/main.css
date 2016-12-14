@@ -12,6 +12,13 @@
 
 /**********STYLING FOR PORTFOLIO*************/
 
+p {
+  font-style: italic;
+  font-size: 1.3em;
+  letter-spacing: .1em;
+  text-shadow: 0 0 2px, 0 0 4px gray;
+}
+
 html {
   background-color: rgba(0, 0, 0, 1);
   background: url(../img/nightsky.jpg) no-repeat center center fixed;
@@ -67,7 +74,7 @@ ul.topnav li.icon {
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 80vh;
+  height: 65vh;
 }
 
 #introcontent {
@@ -92,14 +99,14 @@ ul.topnav li.icon {
   letter-spacing: 5px;
 }
 
-#codingcontent, #designcontent, #aboutcontent {
+#codingcontent, #designcontent {
   height: 100%;
+  background-color: gray;
 }
 
 .projects, #aboutcontent  {
   margin-top: 2em;
 }
-
 
 #line {
   width: 30em;
@@ -181,27 +188,37 @@ ul.topnav li.icon {
 }
 
 .portfolioproject {
-  background-color: gray;
-  height: 3em;
+  height: 2.75em;
   width: auto;
   color: white;
-  padding: 20px;
+  padding: 10px;
   font-family: Arial;
-  font-size: 20px;
+  font-size: 2em;
+  filter: grayscale(100%);
+  text-shadow: #000 0px 0px 5px,   #000 0px 0px 5px,   #000 0px 0px 5px,
+             #000 0px 0px 5px,   #000 0px 0px 5px,   #000 0px 0px 5px;
+  background-size: cover;
+  text-align: center;
 }
 
-.portfolioproject:hover {
+.portfolioproject:hover, .active {
   background-color: white;
   color: gray;
-  transform: scale(1.2);
+  background-image: none !important;
+  text-shadow: none;
 }
 
 .projectcontent {
   background-color: white;
   width: auto;
-  height: 500px;
+  height: 100%;
   color: black;
   display: none;
+}
+
+.projecticon {
+  width: 50px;
+  height: 50px;
 }
 
 #aboutcontent p {
@@ -216,16 +233,9 @@ ul.topnav li.icon {
   height: 100%;
 }
 
-#importantinfo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
 #bio {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -295,7 +305,7 @@ button a {
     font-size: 4em;
     line-height: 1em;
     font-weight: bold;
-    margin-top: -1em;
+    margin-top: -.25em;
   }
 
   #line {
@@ -321,9 +331,35 @@ button a {
     width: auto;
   }
 
-  #importantinfo {
+  #importantinfo, #bio {
     display: block;
   }
+
+  #bio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #codingpage, #designpage, #aboutpage {
+    margin-top: -1em;
+  }
+
+  #aboutpage {
+    height: 80vh;
+  }
+
+  /*#bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -5px;
+  }
+
+  #profilepic, #profiledescription {
+    margin: 0 5px;
+  }*/
+
 
 }
 
