@@ -1,15 +1,3 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Cgrayit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 /**********STYLING FOR PORTFOLIO*************/
 
 p {
@@ -29,6 +17,12 @@ html {
 body {
   height: 100%;
   /*background-color: black;*/
+}
+
+.sectiontitle {
+  font-family: Lalezar;
+  height: 1em;
+  letter-spacing: .1em;
 }
 
 ul.topnav {
@@ -101,7 +95,11 @@ ul.topnav li.icon {
 
 #codingcontent, #designcontent {
   height: 100%;
-  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*background-color: gray;*/
 }
 
 .projects, #aboutcontent  {
@@ -136,25 +134,6 @@ ul.topnav li.icon {
       0px 10px 100px gray,
       0px 10px 100px gray,
       0px 10px 100px gray;*/
-
-    /*box-shadow: 0px 0px 10px,
-      0px 0px 10px,
-      0px 0px 25px,
-      0px 0px 25px,
-      0px 0px 25px,
-      0px 0px 25px,
-      0px 0px 25px,
-      0px 0px 25px,
-      0px 0px 50px,
-      0px 0px 50px,
-      0px 0px 50px gray,
-      0px 0px 150px gray,
-      0px 10px 100px gray,
-      0px 10px 100px gray,
-      0px 10px 100px gray,
-      0px 10px 100px gray,
-      0px 10px 100px gray,
-      0px 10px 100px gray;*/
     }
 }
 
@@ -174,6 +153,7 @@ ul.topnav li.icon {
   font-size: 5em;
   margin-top: .25em;
   margin-bottom: .25em;
+  animation: lights 1s ease-in-out;
 }
 
 #codingpage, #designpage, #aboutpage {
@@ -184,21 +164,25 @@ ul.topnav li.icon {
 
 .projects {
   height: 100%;
-  background-color: gray;
+  width: 55em;
+  /*background-color: gray;*/
 }
 
 .portfolioproject {
-  height: 2.75em;
+  height: 2.25em;
   width: auto;
   color: white;
-  padding: 10px;
-  font-family: Arial;
-  font-size: 2em;
+  padding-top: 1em;
+  padding-bottom: -1em;
+  font-family: Lalezar;
+  font-size: 2.5em;
   filter: grayscale(100%);
-  text-shadow: #000 0px 0px 5px,   #000 0px 0px 5px,   #000 0px 0px 5px,
-             #000 0px 0px 5px,   #000 0px 0px 5px,   #000 0px 0px 5px;
+  text-shadow: #000 0px 0px 20px,   #000 0px 0px 20px,   #000 0px 0px 20px,
+             #000 2px 8px 0px,   #000 2px 8px 0px,   #000 2px 8px 0px;
   background-size: cover;
+  /*background-color: rgba(128, 128, 128, .5);*/
   text-align: center;
+  /*margin-bottom: 15px;*/
 }
 
 .portfolioproject:hover, .active {
@@ -206,14 +190,31 @@ ul.topnav li.icon {
   color: gray;
   background-image: none !important;
   text-shadow: none;
+  margin: 0;
 }
 
 .projectcontent {
   background-color: white;
   width: auto;
-  height: 100%;
+  height: auto;
   color: black;
   display: none;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectcontent p {
+  width: 40em;
+  margin: 0px 10em 1em 10em;
+  text-shadow: none;
+  font-style: none;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
 }
 
 .projecticon {
@@ -229,13 +230,12 @@ ul.topnav li.icon {
 }
 
 #aboutcontent {
-  background-color: black;
   height: 100%;
 }
 
 #bio {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -261,27 +261,64 @@ button a {
   font-family: Arial;
 }
 
+.designcontent {
+  /*display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;*/
+  display: block;
+  height: auto;
+}
+
+.designcontent img {
+  height: 50%;
+  width: 50%;
+  margin: 1em;
+}
+
+#coinstar img {
+  height: 90%;
+  width: 90%;
+}
+
+.coding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#profiledescription {
+  width: 40em;
+}
+
+#profiledescription p {
+  text-align: center;
+  font-size: 1em;
+  background-color: rgba(0, 0, 0, .3);
+}
+
 /*#project1 {
   background-image: url("https://assets.facerepo.com/app/image/preview/simon-says-149a4714d63.png?v=149a4714ca8");
   background-size: cover;
 }*/
 
 /*When screen is less than 680px, hide all the list items and show the nav icon*/
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 720px) {
 
-  html {
+  .projects {
+    width: auto;
   }
 
   ul.topnav {
     padding: 5px;
-    /*position: relative;*/
+    position: relative;
   }
 
   ul.topnav li {
-    /*display: none;*/
-    margin: 20px;
     display: block;
-  }
+    margin: 20px;
+    }
 
   /*ul.topnav li.icon {
     display: inline-block;
@@ -331,13 +368,14 @@ button a {
     width: auto;
   }
 
-  #importantinfo, #bio {
+  #importantinfo {
     display: block;
   }
 
   #bio {
     flex-direction: column;
     text-align: center;
+    height: auto;
   }
 
   #codingpage, #designpage, #aboutpage {
@@ -347,6 +385,26 @@ button a {
   #aboutpage {
     height: 80vh;
   }
+
+  .designcontent {
+    display: block;
+  }
+
+  .designcontent img {
+    height: 70%;
+    width: 70%;
+  }
+
+  .projectcontent p {
+    margin-left: 5em;
+    margin-right: 5em;
+    text-shadow: none;
+    font-style: none;
+    font-weight: bold;
+    font-size: .75em;
+    text-align: left;
+  }
+
 
   /*#bio {
     display: flex;
@@ -363,7 +421,7 @@ button a {
 
 }
 
-/*@media screen and (max-width: 560px) {
+@media screen and (max-width: 720px) {
   ul.topnav.mobile {
     position: static;
   }
@@ -373,12 +431,12 @@ button a {
     top: 0;
   }
   ul.topnav.mobile li {
-    display: inline;
+    /*display: flex;*/
   }
   ul.topnav.mobile li a {
-    display: inline-block;
+    /*display: inline-block;*/
   }
-}*/
+}
 
 /**********************/
 
@@ -462,26 +520,6 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
