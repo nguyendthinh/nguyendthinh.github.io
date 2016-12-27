@@ -1,10 +1,15 @@
 /**********STYLING FOR PORTFOLIO*************/
+a {
+  text-decoration: none;
+  color: white;
+}
 
 p {
   font-style: italic;
   font-size: 1.3em;
   letter-spacing: .1em;
   text-shadow: 0 0 2px, 0 0 4px gray;
+  font-family: Cabin;
 }
 
 html {
@@ -49,7 +54,7 @@ ul.topnav li a {
   font-size: 20px;
   display: inline;
   transition: 0.3s;
-  font-family: Arial;
+  font-family: Cabin;
   text-shadow: 0 0 3px, 0 0 4px gray;
   position: relative;
 }
@@ -78,7 +83,7 @@ ul.topnav li.icon {
   align-items: center;
   justify-content: center;
   color: white;
-  font-family: 'Arial';
+  font-family: 'cabin';
   line-height: 10px;
   letter-spacing: 2px;
   top: 50%;
@@ -211,15 +216,15 @@ ul.topnav li.icon {
   width: 40em;
   margin: 0px 10em 1em 10em;
   text-shadow: none;
-  font-style: none;
+  font-style: normal;
   font-weight: bold;
   font-size: 1em;
   text-align: left;
 }
 
 .projecticon {
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
 }
 
 #aboutcontent p {
@@ -258,7 +263,7 @@ button {
 button a {
   text-decoration: none;
   color: white;
-  font-family: Arial;
+  font-family: cabin;
 }
 
 .designcontent {
