@@ -320,6 +320,7 @@ button a {
 @media screen and (max-width: 650px) {
   #introcontent {
     padding-top: 0;
+    animation: none;
   }
   #introcontent h2 {
     margin-bottom: 0;
