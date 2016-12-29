@@ -322,6 +322,9 @@ button a {
     padding-top: 0;
     animation: none;
   }
+  #codingpage h1, #designpage h1, #aboutpage h1 {
+    animation: none;
+  }
   #introcontent h2 {
     margin-bottom: 0;
   }
