@@ -319,6 +319,9 @@ button a {
 /*When screen is less than 680px, hide all the list items and show the nav icon*/
 @media screen and (max-width: 650px) {
 
+  #introcontent h2 {
+    margin-bottom: 0;
+  }
   .projects {
     width: auto;
   }
