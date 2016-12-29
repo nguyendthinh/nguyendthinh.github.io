@@ -320,7 +320,7 @@ button a {
 @media screen and (max-width: 650px) {
 
   #homepage {
-    height: 55vh;
+    height: 70%;
   }
   #introcontent {
     padding-top: 0;
