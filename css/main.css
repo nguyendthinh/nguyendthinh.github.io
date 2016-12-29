@@ -318,12 +318,15 @@ button a {
 
 /*When screen is less than 680px, hide all the list items and show the nav icon*/
 @media screen and (max-width: 650px) {
+
   #homepage {
     height: 55vh;
   }
   #introcontent {
     padding-top: 0;
     animation: none;
+    top: 25%;
+    bottom: 50%;
   }
   #codingpage h1, #designpage h1, #aboutpage h1 {
     animation: none;
