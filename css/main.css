@@ -319,6 +319,21 @@ button a {
 /*When screen is less than 680px, hide all the list items and show the nav icon*/
 @media screen and (max-width: 650px) {
 
+  #homepage {
+    height: 70%;
+  }
+  #introcontent {
+    padding-top: 0;
+    animation: none;
+    top: 25%;
+    bottom: 50%;
+  }
+  #codingpage h1, #designpage h1, #aboutpage h1 {
+    animation: none;
+  }
+  #introcontent h2 {
+    margin-bottom: 0;
+  }
   .projects {
     width: auto;
   }
@@ -326,17 +341,18 @@ button a {
   ul.topnav {
     padding: 5px;
     position: relative;
+    background-color: rgba(0, 0, 0, .4)
   }
 
   ul.topnav li {
-    display: block;
+    display: none;
     margin: 20px;
     }
 
-  /*ul.topnav li.icon {
+  ul.topnav li.icon {
     display: inline-block;
     float: right;
-  }*/
+  }
 
   #introcontent {
     min-width: 0;
@@ -431,23 +447,9 @@ button a {
     width: auto;
   }
 
-
-  /*#bio {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 -5px;
-  }
-
-  #profilepic, #profiledescription {
-    margin: 0 5px;
-  }*/
-
-
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 650px) {
   ul.topnav.mobile {
     position: static;
   }
@@ -457,10 +459,10 @@ button a {
     top: 0;
   }
   ul.topnav.mobile li {
-    /*display: flex;*/
+    display: block;
   }
   ul.topnav.mobile li a {
-    /*display: inline-block;*/
+    display: inline;
   }
 }
 
