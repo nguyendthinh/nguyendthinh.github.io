@@ -95,7 +95,7 @@ ul.topnav li.icon {
   left: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
-  min-width: 40em;
+  min-width: 1000em;
   padding: 2em;
   /*background-color: rgba(255, 255, 255, .025);*/
   animation: lights 1s ease-in-out;
@@ -148,7 +148,7 @@ ul.topnav li.icon {
 }
 
 #introcontent h1 {
-  font-size: 80px;
+  font-size: 5em;
   font-family: 'Righteous', cursive;
   /*animation: lights 1s ease-in-out infinite alternate;*/
 }
@@ -407,6 +407,7 @@ button a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: auto;
   }
 
   #importantinfo {
