@@ -514,9 +514,17 @@ button a {
 
   #profiledescription {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
     justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
     width: auto;
   }
 
