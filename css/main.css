@@ -112,7 +112,6 @@ ul.topnav li.icon {
   min-width: 1000em;
   padding: 2em;
   /*background-color: rgba(255, 255, 255, .025);*/
-  -webkit-animation: lights 1s ease-in-out;
   -moz-animation: lights 1s ease-in-out;
   animation: lights 1s ease-in-out;
   text-shadow: 0 0 2px, 0 0 4px, 0 0 7px, 0 0 10px gray;
@@ -410,6 +409,11 @@ button a {
   font-style: normal;
   background-color: rgba(255, 255, 255, .5);
   color: black;
+}
+
+#dropbox {
+  border: 1px solid white;
+  box-shadow: 0 0 2px, 0 0 4px gray;
 }
 
 /*When screen is less than 680px, hide all the list items and show the nav icon*/

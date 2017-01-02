@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   $("#home").click(function(){
     $('main:not(#homepage)').css("display", "none");
-    $("#homepage").css("display", "flex");
+    $("#homepage").attr('style', "display: -webkit-flex; display: -moz-flex; display: flex;");
   })
 
   $("#coding").click(function(){
