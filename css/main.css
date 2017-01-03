@@ -25,7 +25,6 @@ html {
 }
 
 body {
-  /*height: 100%;*/
   /*background-color: black;*/
 }
 
@@ -123,9 +122,6 @@ ul.topnav li.icon {
   display: flex;
   display: -webkit-flex;
   display: -moz-flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
   justify-content: center;
   -webkit-justify-content: center;
   -moz-justify-content: center;
@@ -422,6 +418,22 @@ button a {
   border: 1px solid white;
   box-shadow: 0 0 2px, 0 0 4px gray;
 }
+
+.footer {
+  background-color: gray;
+  padding: 1em;
+}
+
+/*.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+footer, .push {
+  height: 50px;
+  text-align: center;
+  background-color: gray;
+}*/
 
 /*When screen is less than 680px, hide all the list items and show the nav icon*/
 @media screen and (max-width: 650px) {
