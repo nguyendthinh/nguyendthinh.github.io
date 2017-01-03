@@ -136,7 +136,7 @@ ul.topnav li.icon {
 }
 
 .projects, #aboutcontent  {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 #line {
@@ -242,11 +242,13 @@ ul.topnav li.icon {
   display: none;
   text-align: center;
   color: white;
+  height: 100%;
 }
 
 .projects {
   height: 100%;
   width: 55em;
+  margin-bottom: 2em;
   /*background-color: gray;*/
 }
 
@@ -384,6 +386,11 @@ button a {
   width: 90%;
 }
 
+#sba img {
+  height: 80%;
+  width: 80%;
+}
+
 .coding {
   display: flex;
   display: -webkit-flex;
@@ -426,6 +433,10 @@ button a {
     height: 70%;
   }
 
+  #codingpage, #designpage {
+    height: auto;
+  }
+
   #introcontent {
     padding-top: 0;
     animation: none;
@@ -447,6 +458,7 @@ button a {
 
   .projects {
     width: auto;
+    margin-bottom: 0;
   }
 
   ul.topnav {
@@ -574,6 +586,7 @@ button a {
     text-align: left;
     width: auto;
   }
+
 
 }
 
