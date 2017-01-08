@@ -298,8 +298,7 @@ ul.topnav li.icon {
 }
 
 .projectcontent p {
-  width: 40em;
-  margin: 0px 10em 1em 10em;
+  width: 35em;
   text-shadow: none;
   font-style: normal;
   font-weight: bold;
@@ -425,16 +424,17 @@ button a {
   padding: 1em;
 }
 
-/*.wrapper {
-  min-height: 100%;
-  margin-bottom: -50px;
-}
-
-footer, .push {
-  height: 50px;
-  text-align: center;
+.demo {
+  height: auto;
+  width: 10em;
+  padding: .75em;
   background-color: gray;
-}*/
+  border: none;
+  font-size: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-family: Cabin;
+}
 
 /*When screen is less than 680px, hide all the list items and show the nav icon*/
 @media screen and (max-width: 650px) {
@@ -600,6 +600,10 @@ footer, .push {
     width: auto;
   }
 
+  .demo {
+    width: 30vw;
+    font-size: 3vw;
+  }
 
 }
 
