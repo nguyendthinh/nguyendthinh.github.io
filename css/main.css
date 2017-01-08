@@ -424,7 +424,7 @@ button a {
   padding: 1em;
 }
 
-.demo {
+button.demo {
   height: auto;
   width: 10em;
   padding: .75em;
@@ -600,7 +600,7 @@ button a {
     width: auto;
   }
 
-  .demo {
+  button.demo {
     width: 30vw;
     font-size: 3vw;
   }
