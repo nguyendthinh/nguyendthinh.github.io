@@ -25,8 +25,9 @@ html {
 }
 
 body {
-  /*background-color: black;*/
-
+  position: relative;
+  margin: 0;
+  min-height: 100%;
 }
 
 .sectiontitle {
@@ -238,6 +239,7 @@ ul.topnav li.icon {
   text-align: center;
   color: white;
   height: 100%;
+  margin: 0 auto;
 }
 
 .projects {
@@ -422,6 +424,14 @@ button a {
   background-color: gray;
   text-align: center;
   padding: 1em;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.pusher {
+  height: 7.5vh;
 }
 
 button.demo {
@@ -440,6 +450,14 @@ button.demo {
 @media screen and (max-width: 650px) {
   body {
     height: 100%;
+  }
+
+  .footer {
+    position: relative;
+  }
+
+  .pusher {
+    height: 0;
   }
 
   #homepage {
