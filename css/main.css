@@ -64,7 +64,16 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-  text-shadow: 0px 0px 25px, 0px 0px 25px gray;
+  text-shadow: 0px 0px 25px, 5px 5px 25px gray;
+}
+
+.logo:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 25px, 0px 0px 25px gray;
+}
+
+button:hover {
+  box-shadow: 0px 0px 25px, 0px 0px 25px gray;
 }
 
 /*Hide nav icon that shows nav bar when screens are small*/
@@ -444,6 +453,11 @@ button.demo {
   margin-left: 1em;
   margin-right: 1em;
   font-family: Cabin;
+}
+
+button.demo:hover {
+  box-shadow: none;
+  background-color: black;
 }
 
 #contact {
