@@ -446,6 +446,16 @@ button.demo {
   font-family: Cabin;
 }
 
+#contact {
+  margin: 1em;
+}
+
+.logo {
+  height: auto;
+  width: 4em;
+  margin: .5em;
+}
+
 /*When screen is less than 680px, hide all the list items and show the nav icon*/
 @media screen and (max-width: 650px) {
   body {
