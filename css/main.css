@@ -240,7 +240,7 @@ ul.topnav li.icon {
 }
 
 #codingpage, #designpage, #aboutpage {
-  display: none;
+  display: block;
   text-align: center;
   color: white;
   height: 100%;

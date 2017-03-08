@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Thinh Nguyen</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Lalezar|Cabin" rel="stylesheet">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+  <!--[if !IE]->
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <ul class="topnav" id="myTopnav">
+    <li><a href="index.html" id="home">HOME</a></li>
+    <li><a href="coding.html" id="coding">CODING</a></li>
+    <li><a href="design.html" id="design">DESIGN</a></li>
+    <li><a href="about.html" id="about">ABOUT</a></li>
+    <li class="icon">
+      <a id="dropbox" href-"javascript:void(0);" onclick="navBar()">&#9776;</a>
+    </li>
+  </ul>
+
+  <main id="codingpage">
+    <h1 class="sectiontitle">CODING</h1>
+
+    <p>View all of my personal and ongoing coding programs.</p>
+    <div id="codingcontent">
+      <section class="projects">
+
+        <div class="portfolioproject" style="background-image: url('./img/harddrive.jpg');">iSimon Says</div>
+        <div class="projectcontent">
+          <div class="coding">
+            <img class="projecticon" src="./img/iSimonSays.png" />
+            <div>
+              <p>My futuristic take on the classic Simon Says game where one must repeat exactly the sequence of colors that Simon says to repeat.
+                I utilized JavaScript in conjunction with a jQuery library in order to successfully program the logic behind the game.</p>
+                <a target="_blank" href="https://nguyendthinh.github.io/simonsays/">
+                  <button class="demo">LIVE DEMO</button>
+                </a>
+                <a target="_blank" href="https://github.com/nguyendthinh/simonsays">
+                  <button class="demo">SOURCE CODE</button>
+                </a>
+              </div><br>
+            </div>
+          </div>
+
+          <div class="portfolioproject" style="background-image: url('./img/icons.png')">Hey, I'm Bored!</div>
+          <div class="projectcontent">
+            <div class="coding">
+              <img class="projecticon" src="./img/heyimbored.png" />
+              <p>A fun application that aims at helping people find nearby events at a last-minute notice... or when they simply need their boredom relieve right away!
+                This is a MEAN stack (MongoDB, Express, Angular, Node) application that utilizes a RESTful server and integration with a third party API that specializes in
+                listing nearby local events.</p>
+                <div>
+                  <a target="_blank" href="https://nguyendthinh.github.io/hey-im-bored-angular/#/">
+                    <button class="demo">LIVE DEMO</button>
+                  </a>
+                  <a target="_blank" href="https://github.com/nguyendthinh/hey-im-bored-angular">
+                    <button class="demo">SOURCE CODE</button>
+                  </a>
+                </div><br>
+              </div>
+            </div>
+
+            <div class="portfolioproject" style="background-image: url('./img/blocks.png')"> Block Party </div>
+            <div class="projectcontent">
+              <div class="coding">
+                <img class="projecticon" src="./img/blockparty.png" />
+                <p>A color-based game that was created using React and vanilla JavaScript. The objective of the game is to get every block on the gameboard to be the same color.
+                  In order to do that, just click on a block and watch as the adjacent blocks change to the color of the block that you clicked on! But watch out, every 20 seconds
+                  the board will change a few blocks on the gameboard to a different color to try to mess you up. Win the game for a cool outcome!</p>
+                  <div>
+                    <a target="_blank" href="https://nguyendthinh.github.io/BlockParty/">
+                      <button class="demo">LIVE DEMO</button>
+                    </a>
+                    <a target="_blank" href="https://github.com/nguyendthinh/BlockParty">
+                      <button class="demo">SOURCE CODE</button>
+                    </a>
+                  </div><br>
+                </div>
+              </div>
+
+              <div class="portfolioproject" style="background-image: url('./img/sneakers.jpg')">Decade Footwear</div>
+              <div class="projectcontent">
+                <div class="coding">
+                  <img class="projecticon" src="./img/decadefootwear.png" />
+                  <p>An ongoing project: I plan on creating a fully-functional shoe shopping website for my cousin and his shoe business, Decade Footwear.
+                    The foundation for this website so far is built on Ruby on Rails.</p>
+                    <p>I have successfully implemented a shopping cart feature as well as an admin/user login and the ability for admin to perform CRUD actions
+                      on the shoe inventory. I am currently laying out the plans to implement other shopping site features as well as implement an Angular front-end.</p>
+                      <div>
+                        <a target="_blank" href="https://thinh-sneaker-site.herokuapp.com/brands">
+                          <button class="demo">LIVE DEMO</button>
+                        </a>
+                        <a target="_blank" href="https://github.com/nguyendthinh/projectTwoShoes">
+                          <button class="demo">SOURCE CODE</button>
+                        </a>
+                      </div><br>
+                    </div>
+                  </div>
+
+                </section>
+
+              </div>
+              <div class="pusher"></div>
+              <div class="footer">
+                All work Copyright © 2017 Thinh Nguyen
+              </div>
+            </main>
+
+                          <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+                          <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+                          <script src="js/plugins.js"></script>
+                          <script src="js/main.js"></script>
+
+                          <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+                          <script>
+                          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                            e.src='https://www.google-analytics.com/analytics.js';
+                            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+                            </script>
+
+                          </body>
+
+
+
+                          </html>
