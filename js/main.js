@@ -20,12 +20,12 @@ $(document).ready(function(){
   //   $("#aboutpage").css("display", "block");
   // })
 
-  //Close any section that were opened in the a previous section
+  //Close any section that were opened in the a previous sectoin
 
-  // $("li").click(function(){
-  //   $(".active").next().slideToggle();
-  //   $(".active").toggleClass("active");
-  // })
+  $("li").click(function(){
+    $(".active").next().slideToggle();
+    $(".active").toggleClass("active");
+  })
 
   $(".portfolioproject").click(function(event){
     event.preventDefault();
@@ -52,6 +52,16 @@ $(document).ready(function(){
         });
       }
   })
+
+  $('.navbar-collapse ul li a').click(function(){
+        $('.navbar-toggle:visible').click();
+});
+
+$('#mainNav').affix({
+        offset: {
+            top: 100
+        }
+    })
 
 });
 
