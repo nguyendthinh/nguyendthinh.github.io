@@ -271,6 +271,7 @@ ul.topnav li.icon {
   /*background-color: rgba(128, 128, 128, .5);*/
   text-align: center;
   /*margin-bottom: 15px;*/
+  box-sizing: initial;
 }
 
 .portfolioproject:hover, .active {
