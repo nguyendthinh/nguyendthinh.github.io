@@ -20,12 +20,12 @@ $(document).ready(function(){
   //   $("#aboutpage").css("display", "block");
   // })
 
-  //Close any section that were opened in the a previous sectoin
+  //Close any section that were opened in the a previous section
 
-  $("li").click(function(){
-    $(".active").next().slideToggle();
-    $(".active").toggleClass("active");
-  })
+  // $("li").click(function(){
+  //   $(".active").next().slideToggle();
+  //   $(".active").toggleClass("active");
+  // })
 
   $(".portfolioproject").click(function(event){
     event.preventDefault();
@@ -53,23 +53,19 @@ $(document).ready(function(){
       }
   })
 
-  $('.navbar-collapse ul li a').click(function(){
-        $('.navbar-toggle:visible').click();
+  $("#dropbox").click(function(event){
+    event.preventDefault();
+    $("#slideMenu").slideToggle();
+  })
+
+  // function navBar() {
+  //   var x = document.getElementById("myTopnav");
+  //   if (x.className == "topnav") {
+  //     x.className += " mobile";
+  //     $("#topnav").next().slideToggle();
+  //   } else {
+  //     x.className = "topnav";
+  //   }
+  // }
+
 });
-
-$('#mainNav').affix({
-        offset: {
-            top: 100
-        }
-    })
-
-});
-
-function navBar() {
-  var x = document.getElementById("myTopnav");
-  if (x.className == "topnav") {
-    x.className += " mobile";
-  } else {
-    x.className = "topnav";
-  }
-}
