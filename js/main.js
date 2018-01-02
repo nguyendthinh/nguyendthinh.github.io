@@ -47,7 +47,7 @@ $(document).ready(function(){
         $(this).toggleClass("active");
         $(this).next().slideToggle(function(){
           $('html, body').animate({
-            scrollTop: $a.offset().top
+            scrollTop: $a.offset().top-50
           }, 'fast');
         });
       }
@@ -58,14 +58,5 @@ $(document).ready(function(){
     $("#slideMenu").slideToggle();
   })
 
-  // function navBar() {
-  //   var x = document.getElementById("myTopnav");
-  //   if (x.className == "topnav") {
-  //     x.className += " mobile";
-  //     $("#topnav").next().slideToggle();
-  //   } else {
-  //     x.className = "topnav";
-  //   }
-  // }
 
 });
